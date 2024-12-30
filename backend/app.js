@@ -1,4 +1,8 @@
+const { createClient } = require('@supabase/supabase-js');
 
+const supabaseUrl = 'https://usqbldgbbvnzrdlnsqnr.supabase.co'; // Zastąp swoim Project URL
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVzcWJsZGdiYnZuenJkbG5zcW5yIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU1NDkzMjksImV4cCI6MjA1MTEyNTMyOX0.WJdGrabmHksoJofmrAeOzdkyIrH1ri-yJKdUOuWSWKM'; // Zastąp swoim Anon Key
+const supabase = createClient(supabaseUrl, supabaseKey);
 const express = require("express");
 const fs = require("fs");
 const path = require("path");
